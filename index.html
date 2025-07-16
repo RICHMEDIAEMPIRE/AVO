@@ -1,65 +1,81 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aerial Visuals Outdoors - Professional Drone Services" />
-  <title>AVO | Aerial Visuals Outdoors</title>
+  <title>AVO - Aerial Visuals Outdoors</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #fff; }
-    header { background: #000; text-align: center; padding: 40px 20px; }
-    header img { max-width: 200px; }
-    h1, h2 { text-align: center; color: #00bfff; }
-    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .video-wrapper { display: flex; justify-content: center; margin: 20px 0; }
-    iframe { width: 100%; max-width: 800px; height: 450px; border: none; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
-    .gallery img { width: 100%; height: auto; border-radius: 8px; }
-    .services ul { list-style: none; padding: 0; text-align: left; }
-    .services li { padding: 10px 0; border-bottom: 1px solid #333; }
-    .inquiry-btn { background: #00bfff; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 30px; }
-    footer { text-align: center; padding: 20px; background: #000; font-size: 14px; color: #aaa; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('Untitled design_20250716_004650_0000.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 200px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin-bottom: 30px;
+    }
+
+    .contact-button {
+      padding: 12px 25px;
+      font-size: 1em;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .contact-button:hover {
+      background-color: #0097a7;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="AVO Logo" />
-    <h1>Aerial Visuals Outdoors</h1>
-    <p>Precision Drone Services Across the Carolinas</p>
-  </header>  <section class="section services">
-    <h2>What We Offer</h2>
-    <ul>
-      <li>✈️ Aerial Photography & Cinematic Videography</li>
-      <li>🛏️ Real Estate Showcases & Property Tours</li>
-      <li>🔍 Roof & Structural Inspections (FAA Part 107 Certified)</li>
-      <li>🌾 Agricultural Crop Monitoring & Land Mapping</li>
-      <li>🌺 Event Coverage: Outdoor Weddings, Fishing Tournaments, Farms</li>
-      <li>🏙️ Commercial Marketing Footage</li>
-      <li>🧵 Custom Drone Solutions on Request</li>
-    </ul>
-    <div style="text-align: center">
-      <a class="inquiry-btn" href="mailto:marketing@richmediaempire.com?subject=AVO%20Service%20Inquiry">Request a Quote</a>
-    </div>
-  </section>  <section class="section">
-    <h2>Sample Video</h2>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-    </div>
-  </section>  <section class="section">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Drone Shot 1" />
-      <img src="photo2.jpg" alt="Drone Shot 2" />
-      <img src="photo3.jpg" alt="Drone Shot 3" />
-      <img src="photo4.jpg" alt="Drone Shot 4" />
-      <img src="photo5.jpg" alt="Drone Shot 5" />
-      <img src="photo6.jpg" alt="Drone Shot 6" />
-      <img src="photo7.jpg" alt="Drone Shot 7" />
-      <img src="photo8.jpg" alt="Drone Shot 8" />
-      <img src="photo9.jpg" alt="Drone Shot 9" />
-      <img src="photo10.jpg" alt="Drone Shot 10" />
-    </div>
-  </section>  <footer>
-    &copy; 2025 AVO - Aerial Visuals Outdoors | All rights reserved.
-  </footer>
+  <div class="overlay">
+    <!-- Optional logo if you have one as PNG/SVG -->
+    <!-- <img src="avo-logo.png" alt="AVO Logo" class="logo" /> -->
+
+    <h1>AVO - Aerial Visuals Outdoors</h1>
+    <p>
+      Precision drone photography and videography for real estate, outdoor events, land surveys, and cinematic scenes.
+    </p>
+    <a href="mailto:your-email@example.com" class="contact-button">Inquire Now</a>
+  </div>
 </body>
 </html>
